@@ -46,7 +46,7 @@ $(".product-color").niceSelect();$(".product-sort").niceSelect();$(".product-tab
 $(".qu-btn").on("click",function(e){var btn=$(this),inp=btn.siblings(".qu-input").val();if(btn.hasClass("inc")){var i=parseFloat(inp)+1;}
 else{if(inp>1)(i=parseFloat(inp)-1)<2&&$(".dec").addClass("deact");else i=1;}
 btn.addClass("deact").siblings("input").val(i)})
-$('.gallery-grid').magnificPopup({delegate:'a',type:'image',tLoading:'Loading image #%curr%...',mainClass:'mfp-img-mobile',gallery:{enabled:true,navigateByImgClick:true,preload:[0,1]},image:{tError:'<a href="%url%">The image #%curr%</a> could not be loaded.',}});function newCounter(){var countDate=new Date("15 October 2022 9:56:00");var sec=1000;var min=sec*60;var hr=min*60;var day=hr*24;var today=new Date();var distance=countDate-today;var days=Math.floor(distance/day);var hours=Math.floor((distance%day)/hr);var mins=Math.floor((distance%hr)/min);var secs=Math.floor((distance%min)/sec);$(".day3").html(days+"<span>Days</span>")
+$('.gallery-grid').magnificPopup({delegate:'a',type:'image',tLoading:'Loading image #%curr%...',mainClass:'mfp-img-mobile',gallery:{enabled:true,navigateByImgClick:true,preload:[0,1]},image:{tError:'<a href="%url%">The image #%curr%</a> could not be loaded.',}});function newCounter(){var countDate=new Date("25 October 2021 9:56:00");var sec=1000;var min=sec*60;var hr=min*60;var day=hr*24;var today=new Date();var distance=countDate-today;var days=Math.floor(distance/day);var hours=Math.floor((distance%day)/hr);var mins=Math.floor((distance%hr)/min);var secs=Math.floor((distance%min)/sec);$(".day3").html(days+"<span>Days</span>")
 $(".hr3").html(hours+"<span>Hrs</span>")
 $(".min3").html(mins+"<span>Mins</span>")
 $(".sec3").html(secs+"<span>Sec</span>")
